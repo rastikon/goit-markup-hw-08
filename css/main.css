@@ -63,11 +63,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -185,14 +183,9 @@ a {
 
 /* Hero */
 .section-main {
+  padding-top: 118px;
   text-align: center;
   background-color: var(--primary-bg-color);
-}
-
-@media screen and (min-width: 480px) {
-  .section-main {
-    padding-top: 118px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -203,18 +196,13 @@ a {
 }
 
 .section-main__title {
-  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 1.62;
   font-weight: 900;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: var(--spec-color);
-}
-
-@media screen and (min-width: 480px) {
-  .section-main__title {
-    font-size: 26px;
-    line-height: 1.62;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -226,17 +214,12 @@ a {
 
 /* Фон */
 .overlay {
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Fon.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Fon.jpg);
-}
-
-@media screen and (min-width: 480px) {
-  .overlay {
-    width: 480px;
-    height: 400px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1271,32 +1254,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media screen and (min-width: 480px) {
-  .clients {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .clients {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1316,12 +1285,6 @@ a {
   border: 1px solid var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .clients__link {
-    width: 210px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
@@ -1334,13 +1297,11 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients__item {
-    margin-bottom: 30px;
-  }
+.clients__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
@@ -1457,7 +1418,7 @@ a {
 /*  ================
       Особливості 
     ================   */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .specifics {
     display: block;
   }
