@@ -1,0 +1,40 @@
+/*  ================
+    Чим ми займаємся
+    ================ */
+.process {
+        display: flex;
+        flex-wrap: wrap;
+
+        // @media screen and (min-width: 480px) {
+        //     display: none;
+        // }
+
+        // @media screen and (min-width: 768px) {
+        //     display: none;
+        // }
+    }
+.process__thumb {
+    position: relative;
+}
+
+.process__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 370px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--spec-color);
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.process__item.process__item:not(:last-child) {
+    margin-right: 30px;
+}

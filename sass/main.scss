@@ -1,0 +1,30 @@
+//utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+
+//base styles
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './base/section';
+
+
+//components
+@import './components/logo';
+@import './components/button';
+@import './components/socials';
+@import './components/modal/modul';
+@import './components/mobile-menu';
+
+
+//lyaouts
+@import './layouts/header';
+@import './layouts/portfolio';
+@import './layouts/clients';
+@import './layouts/cards-team';
+@import './layouts/specifics';
+@import './layouts/set-process';
+@import './layouts/contacts';
+@import './layouts/footer';
