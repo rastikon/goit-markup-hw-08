@@ -50,11 +50,13 @@
 
 .social-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+    
 
-    @media screen and (min-width: 480px) {
-        justify-content: center;
-        margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
     }
 }
 

@@ -17,8 +17,10 @@
     
     <header class="header line-bottom">
         <div class="container header__container">
-            <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
+        
+            
                 <nav>
+                    <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
                     <ul class="site-nav list">
                         <li class="site-nav__item">
                             <a href="" class="site-nav__link site-nav__link--current">Студия</a></li>
@@ -26,9 +28,37 @@
                             <a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                         <li class="site-nav__item">
                             <a href="" class="site-nav__link">Контакты</a></li>
-                    </ul>
-
-                </nav>        
+                        </ul>
+               
+                </nav>   
+                        <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+                            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                                <use class="icon-cross" href="./images/svg/icons.svg#icon-criss"></use>
+                                <use class="icon-path" href="./images/svg/icons.svg#icon-path"></use>
+                            </svg>
+                        </button>
+                        <div class="mobile-menu" id="mobile-menu" data-menu>
+                            <ul class="mobile-menu__nav list">
+                                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
+                                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                            </ul>
+                        
+                            <ul class="mobile-menu__contacts list">
+                                <li class="mobile-menu__title-cont"><a href="tel:+380961111111" class="mobile-menu__link-cont">+380961111111</a>
+                                </li>
+                                <li class="mobile-menu__title-cont"><a href="mailto:info@devstudio.com"
+                                        class="mobile-menu__link-cont">info@devstudio.com</a></li>
+                            </ul>
+                        
+                            <ul class="mobile-menu__social list">
+                                <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Instagram</a></li>
+                                <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Twitter</a></li>
+                                <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Facebook</a></li>
+                                <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">LinkedIn</a></li>
+                        
+                        </div>
+                
                 <ul class="header-contacts list">
                     <li class="header-contacts__item">
                         <a href="mailto:info@devstudio.com" class="header-contacts__link">
@@ -46,41 +76,23 @@
                 </ul>
 
                 <!-- Mobile menu -->
-                <!-- <div class="mobile-menu">
-                    <ul class="mobile-menu__nav list">
-                        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
-                        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-                        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
-                    </ul>
-
-                    <ul class="mobile-menu__contacts list">
-                        <li class="mobile-menu__title-cont"><a href="tel:+380961111111" class="mobile-menu__link-cont">+380961111111</a></li>
-                        <li class="mobile-menu__title-cont"><a href="mailto:info@devstudio.com" class="mobile-menu__link-cont">info@devstudio.com</a></li>
-                    </ul>
-
-                    <ul class="mobile-menu__social list">
-                        <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Instagram</a></li>
-                        <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Twitter</a></li>
-                        <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Facebook</a></li>
-                        <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">LinkedIn</a></li>
-
-                </div> -->
-                <button type="button" class="menu-button is-open" data-menu-button>
-                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="icon-cross" href="./images/svg/icons.svg#icon-criss"></use>
-                        <use class="icon-path" href="./images/svg/icons.svg#icon-path"></use>
-                    </svg>
-                </button>
+                     
         </div>
+        
+        
+        
     </header>
 
     <main>
         
         <!-- Hero -->
         <section class="section-main overlay">
-                <h1 class="section-main__title">Эффективные решения<br> для вашего бизнеса</h1>
+            <div class="container">
+                <h1 class="section-main__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
-                <!-- <a href="">Заказать услугу</a> -->
+            </div>
+                
+                
         </section>
     
 
@@ -132,7 +144,7 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-         <section class="section section_process">
+         <!-- <section class="section section_process">
 
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
@@ -158,7 +170,7 @@
                 </ul>
             </div>
            
-        </section> 
+        </section>  -->
        
         <!-- Наша команда -->
          <section class="section color">
@@ -318,7 +330,7 @@
             
         </section> 
 
-        
+        <!-- Постійні клієнти -->
          <section class="section">
             <h2 class="section-title">Постоянные клиенты</h2>
             <div class="container">
@@ -516,10 +528,11 @@
                 </form>
             </div>
         </div>        
-    </footer>
-    
-    <script scr="./js/menu.js"></script>
+    </footer> 
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

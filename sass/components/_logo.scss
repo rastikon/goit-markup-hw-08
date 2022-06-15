@@ -22,10 +22,11 @@
 }
 
 .footermain__logo {
+    display: block;
+    text-align: center;
     margin-right: 0;
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-           display: block;
-            text-align: center;
+    @media screen and (min-width: 1200px) {
+           text-align: left;
         }
 }

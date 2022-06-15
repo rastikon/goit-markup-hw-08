@@ -51,13 +51,13 @@
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 56px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    list-style: none;
     
     @media screen and (min-width: 480px) {
-           flex-wrap: wrap;
-           justify-content: start;
+         
         }
 
     @media screen and (min-width: 768px) {
@@ -89,26 +89,42 @@
     }
 
 .filter__item {
-    @media screen and (min-width: 480px) {
+
+        display: inline-flex;
         margin-right: 8px;
         margin-bottom: 15px;
-    }
 
-        &:nth-child(3n) {
-            @media screen and (max-width: 767px) {
-                margin-right: 0;
-            }
+     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+     }
+
+     &:last-child {
+        @media screen and (min-width: 1200px) {
+            margin-right: 0;
         }
+     }
+    
+
+        // &:nth-child(3n) {
+        //     @media screen and (max-width: 767px) {
+        //         margin-right: 0;
+        //     }
+        // }
         
-        &:nth-last-child(-n+2) {
-            @media screen and (max-width: 767px) {
-                margin-bottom: 0;
-            }
-        }
+        // &:nth-last-child(-n+2) {
+        //     @media screen and (max-width: 767px) {
+        //         margin-bottom: 0;
+        //     }
+        // }
+        // &:last-child {
+        //     @media screen and (max-width: 767.02px) {
+        //         margin-bottom: 0;
+        //     }
+        // }
 
-                 @media screen and (min-width: 768px) {
-                     margin-bottom: 0;
-                 }
+        //          @media screen and (min-width: 768px) {
+        //              margin-bottom: 0;
+        //          }
     }
 
 

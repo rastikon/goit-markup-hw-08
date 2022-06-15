@@ -2,9 +2,10 @@
 
 // Контакти у хедері
 .header-contacts {
+    display: none;
     
     @media screen and (max-width: 767px ) {
-        display: none;
+        
     }
     
     @media screen and (min-width: 768px) {
@@ -112,6 +113,9 @@
 // Контакти у футері
 .address {
     /* display: flex;  */
+    text-align: center;
+    margin-bottom: 60px;
+
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -120,10 +124,8 @@
     line-height: 1.7;
     color: var(--spec-color);
 
-    @media screen and (min-width: 480px) {
-        text-align: center;
-        margin-bottom: 60px;
-    }
+   
+    
 
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
@@ -163,20 +165,18 @@
 }
 
 .connect {
-    
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 60px;
 
-    //Viewport 480
-    @media screen and (min-width: 480px) {
-            text-align: center;
-            margin-left: 0;
-            margin-bottom: 60px;
-        }
+
 
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }    
 
     @media screen and (min-width: 1200px) {
+        text-align: left;
         margin-left: 70px;
     }
 
