@@ -4,7 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+
+    padding: 16px 15px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
 
 }
 
@@ -58,7 +63,8 @@
             color: var(--accent-color);
         }
 
-        &--current {
+                
+        .site-nav__link--current {
             color: var(--accent-color);
             
                 &::after {
@@ -80,7 +86,6 @@
 
 .menu-button {
 
-    
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -92,21 +97,30 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+  &:focus {
+      fill: var(--accent-color);
+  }
+    
 }
 
 .menu-button .icon-cross {
     display: none;
-   
-   
 }
 
 .menu-button.is-open .icon-cross {
     display: block;
-    
-}
 
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+ 
 .menu-button.is-open .icon-path {
     display: none;
+}
+
+.icon-path:focus {
+    fill: red;
 }
 
 

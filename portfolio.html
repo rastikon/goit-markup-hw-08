@@ -12,40 +12,74 @@
         <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+
     <!-- Хедер -->
-        <header class="header line-bottom">
-            <div class="container header__container">
-                <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
-                <nav>
-                    <ul class="site-nav list">
-                        <li class="site-nav__item">
-                            <a href="./index.html" class="site-nav__link">Студия</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="" class="site-nav__link site-nav__link--current">Портфолио</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="" class="site-nav__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header-contacts list">
-                    <li class="header-contacts__item">
-                        <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                            <svg class="header-contacts__icon-mail">
-                                <use href="./images/svg/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
+    <header class="header line-bottom">
+        <div class="container header__container">
+    
+            <a href="./index.html" class="logo">Web<span class="logo__head">Studio</span></a>
+            <nav>
+    
+                <ul class="site-nav list">
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Студия</a>
                     </li>
-                    <li class="header-contacts__item"><a href="tel:+380991111111" class="header-contacts__link">
-                            <svg class="header-contacts__icon-phone">
-                                <use href="./images/svg/sprite.svg#icon-phone"></use>
-                            </svg>
-                            +38 099 111 11 11</a></li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Контакты</a>
+                    </li>
                 </ul>
+    
+            </nav>
+            <!-- Mobile menu -->
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+                <svg class="mob-menu-icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/svg/icons.svg#icon-criss"></use>
+                    <use class="icon-path" href="./images/svg/icons.svg#icon-path"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--current">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+    
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__title-cont"><a href="tel:+380961111111"
+                            class="mobile-menu__link-cont mobile-menu__link-mob">+380961111111</a>
+                    </li>
+                    <li class="mobile-menu__title-cont"><a href="mailto:info@devstudio.com"
+                            class="mobile-menu__link-cont">info@devstudio.com</a></li>
+                </ul>
+    
+                <ul class="mobile-menu__social list">
+                    <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Instagram</a></li>
+                    <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Twitter</a></li>
+                    <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Facebook</a></li>
+                    <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">LinkedIn</a></li>
+    
             </div>
-        </header> 
+            <ul class="header-contacts list">
+                <li class="header-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                        <svg class="header-contacts__icon-mail">
+                            <use href="./images/svg/sprite.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-contacts__item"><a href="tel:+380991111111" class="header-contacts__link">
+                        <svg class="header-contacts__icon-phone">
+                            <use href="./images/svg/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +38 099 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
     <!-- Меін -->
     <main>
         <section class="section"> 
@@ -61,7 +95,7 @@
                 <ul class="project list">
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/technockack.jpg" alt="Технокряк" >
+                            <img src="./images/technockack.jpg" alt="Технокряк" class="img">
                             <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -78,7 +112,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/poster.jpg" alt="Постер" width="370">
+                            <img src="./images/poster.jpg" alt="Постер" width="" class="img">
                                 <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -95,7 +129,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/seafood.jpg" alt="Ресторан" width="370">
+                            <img src="./images/seafood.jpg" alt="Ресторан" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -112,7 +146,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/prime.jpg" alt="Проект" width="370">
+                            <img src="./images/prime.jpg" alt="Проект" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -129,7 +163,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/boxesproject.jpg" alt="Проект коробки" width="370">
+                            <img src="./images/boxesproject.jpg" alt="Проект коробки" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -146,7 +180,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/inspiration.jpg" alt="Вдохновение без границ" width="370">
+                            <img src="./images/inspiration.jpg" alt="Вдохновение без границ" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -163,7 +197,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/limitededition.jpg" alt="Издание" width="370">
+                            <img src="./images/limitededition.jpg" alt="Издание" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -180,7 +214,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/lab.jpg" alt="Проект LAB" width="370">
+                            <img src="./images/lab.jpg" alt="Проект LAB" width="" class="img">
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -197,7 +231,7 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/growing.jpg" alt="Бизнес" width="370">
+                            <img src="./images/growing.jpg" alt="Бизнес" width="" class="img">
                                 <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -286,5 +320,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>

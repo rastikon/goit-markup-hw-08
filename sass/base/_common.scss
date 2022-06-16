@@ -1,7 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto, sans-serif;
     color: var(--title-text-color);
     letter-spacing: 0.03em;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body.is-open {
+    overflow: hidden;
 }
 
 //section style
