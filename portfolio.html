@@ -50,7 +50,7 @@
     
                 <ul class="mobile-menu__contacts list">
                     <li class="mobile-menu__title-cont"><a href="tel:+380961111111"
-                            class="mobile-menu__link-cont mobile-menu__link-mob">+380961111111</a>
+                            class="mobile-menu__link-cont mobile-menu__link-mob ">+380961111111</a>
                     </li>
                     <li class="mobile-menu__title-cont"><a href="mailto:info@devstudio.com"
                             class="mobile-menu__link-cont">info@devstudio.com</a></li>
@@ -61,7 +61,7 @@
                     <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Twitter</a></li>
                     <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Facebook</a></li>
                     <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">LinkedIn</a></li>
-    
+                </ul>
             </div>
             <ul class="header-contacts list">
                 <li class="header-contacts__item">
@@ -95,7 +95,26 @@
                 <ul class="project list">
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/technockack.jpg" alt="Технокряк" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_1_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_1_lg_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_1_md_1x.jpg 1x,
+                                                ./images/portfolio/img_1_md_2x.jpg 2x" 
+                                        type="image/jpg">
+                            
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_1_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_1_sm_2x.jpg 2x" 
+                                        type="image/jpg">
+                            <img src="./images/portfolio/img_1_sm_1x.jpg"  width="450" alt="Технокряк" class="img">
+                            </picture>
                             <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -112,7 +131,28 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/poster.jpg" alt="Постер" width="" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_2_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_2_lg_2x.jpg 2x"
+                                    type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_2_md_1x.jpg 1x,
+                                                ./images/portfolio/img_2_md_2x.jpg 2x"
+                                    type="image/jpg">
+                            
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_2_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_2_sm_2x.jpg 2x"
+                                    type="image/jpg">
+
+
+                            <img src="./images/portfolio/img_2_sm_1x.jpg" alt="Постер" width="450" class="img">
+                            </picture>
                                 <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -129,7 +169,28 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/seafood.jpg" alt="Ресторан" width="" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_3_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_3_lg_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_3_md_1x.jpg 1x,
+                                                ./images/portfolio/img_3_md_2x.jpg 2x" 
+                                        type="image/jpg">
+                            
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_3_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_3_sm_2x.jpg 2x"
+                                        type="image/jpg">
+                            
+
+                            <img src="./images/portfolio/img_3_sm_1x.jpg" alt="Ресторан" width="450" class="img">
+                            </picture>
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -146,7 +207,27 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/prime.jpg" alt="Проект" width="" class="img">
+
+                            <picture>
+                            <!-- Десктоп -->
+                            <source media="(min-width: 1200px)" 
+                                    srcset="./images/portfolio/img_4_lg_1x.jpg 1x,
+                                            ./images/portfolio/img_4_lg_2x.jpg 2x"
+                                type="image/jpg">
+                            <!-- Планшет -->
+                            <source media="(min-width: 768px)" 
+                                    srcset="./images/portfolio/img_4_md_1x.jpg 1x,
+                                            ./images/portfolio/img_4_md_2x.jpg 2x"
+                                    type="image/jpg">
+                            
+                            <!-- Для мобільного -->
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/img_4_sm_1x.jpg 1x, 
+                                        ./images/portfolio/img_4_sm_2x.jpg 2x"
+                                type="image/jpg">
+
+                            <img src="./images/portfolio/img_4_sm_1x.jpg" alt="Проект" width="450" class="img">
+                            </picture>
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -163,7 +244,27 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/boxesproject.jpg" alt="Проект коробки" width="" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_5_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_5_lg_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_5_md_1x.jpg 1x,
+                                                ./images/portfolio/img_5_md_2x.jpg 2x" 
+                                        type="image/jpg">
+                                
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_5_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_5_sm_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <img src="./images/portfolio/img_5_sm_1x.jpg" alt="Проект коробки" width="450" class="img">
+                            </picture>
+                            
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -180,7 +281,29 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/inspiration.jpg" alt="Вдохновение без границ" width="" class="img">
+
+                            <picture>
+                                    <!-- Десктоп -->
+                                    <source media="(min-width: 1200px)" 
+                                            srcset="./images/portfolio/img_6_lg_1x.jpg 1x,
+                                                    ./images/portfolio/img_6_lg_2x.jpg 2x" 
+                                            type="image/jpg">
+                                    <!-- Планшет -->
+                                    <source media="(min-width: 768px)" 
+                                            srcset="./images/portfolio/img_6_md_1x.jpg 1x,
+                                                    ./images/portfolio/img_6_md_2x.jpg 2x" 
+                                            type="image/jpg">
+                                    
+                                    <!-- Для мобільного -->
+                                    <source media="(max-width: 767px)" 
+                                            srcset="./images/portfolio/img_6_sm_1x.jpg 1x, 
+                                                    ./images/portfolio/img_6_sm_2x.jpg 2x" 
+                                            type="image/jpg">
+
+                                <img src="./images/portfolio/img_6_sm_1x.jpg" alt="Вдохновение без границ" width="450" class="img">
+                            </picture>
+
+                            
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -197,7 +320,28 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/limitededition.jpg" alt="Издание" width="" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_7_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_7_lg_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_7_md_1x.jpg 1x,
+                                                ./images/portfolio/img_7_md_2x.jpg 2x" 
+                                        type="image/jpg">
+                                
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_7_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_7_sm_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <img src="images/portfolio/img_7_sm_1x.jpg" alt="Издание" width="450" class="img">
+                            </picture>
+
+                            
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -214,7 +358,28 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/lab.jpg" alt="Проект LAB" width="" class="img">
+
+                                <picture>
+                                    <!-- Десктоп -->
+                                    <source media="(min-width: 1200px)" 
+                                            srcset="./images/portfolio/img_8_lg_1x.jpg 1x,
+                                                    ./images/portfolio/img_8_lg_2x.jpg 2x" 
+                                            type="image/jpg">
+                                    <!-- Планшет -->
+                                    <source media="(min-width: 768px)" 
+                                            srcset="./images/portfolio/img_8_md_1x.jpg 1x,
+                                                    ./images/portfolio/img_8_md_2x.jpg 2x" 
+                                            type="image/jpg">
+                                    
+                                    <!-- Для мобільного -->
+                                    <source media="(max-width: 767px)" 
+                                            srcset="./images/portfolio/img_8_sm_1x.jpg 1x, 
+                                                    ./images/portfolio/img_8_sm_2x.jpg 2x" 
+                                            type="image/jpg">
+                                <img src="./images/lab.jpg" alt="Проект LAB" width="450" class="img">
+                                </picture>
+
+                            
                                  <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит
@@ -231,7 +396,27 @@
                     </li>
                     <li class="project__item"> <a href="#" class="project__link">
                         <div class="project__thumb">
-                            <img src="./images/growing.jpg" alt="Бизнес" width="" class="img">
+
+                            <picture>
+                                <!-- Десктоп -->
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/img_9_lg_1x.jpg 1x,
+                                                ./images/portfolio/img_9_lg_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <!-- Планшет -->
+                                <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/img_9_md_1x.jpg 1x,
+                                                ./images/portfolio/img_9_md_2x.jpg 2x" 
+                                        type="image/jpg">
+                                
+                                <!-- Для мобільного -->
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/img_9_sm_1x.jpg 1x, 
+                                                ./images/portfolio/img_9_sm_2x.jpg 2x" 
+                                        type="image/jpg">
+                                <img src="images/portfolio/img_9_sm_1x.jpg" alt="Бизнес" width="450" class="img">
+                            </picture>
+                            
                                 <div class="project-overlay">
                                 <p class="project-overlay__uppertext">Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все это позволит

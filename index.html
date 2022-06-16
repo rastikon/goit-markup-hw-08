@@ -38,6 +38,7 @@
                                 <use class="icon-path" href="./images/svg/icons.svg#icon-path"></use>
                             </svg>
                         </button>
+
                         <div class="mobile-menu" id="mobile-menu" data-menu>
                             <ul class="mobile-menu__nav list">
                                 <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--current">Студия</a></li>
@@ -57,7 +58,7 @@
                                 <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Twitter</a></li>
                                 <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">Facebook</a></li>
                                 <li class="mobile-menu__item-soc"><a href="" class="mobile-menu__link-soc">LinkedIn</a></li>
-                        
+                            </ul>
                         </div>
                 <ul class="header-contacts list">
                     <li class="header-contacts__item">
@@ -73,7 +74,7 @@
                             <use href="./images/svg/sprite.svg#icon-phone"></use>
                         </svg>
                         +38 099 111 11 11</a></li>
-            </ul>
+                </ul>
         </div>
  </header>
 
@@ -84,9 +85,7 @@
             <div class="container">
                 <h1 class="section-main__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
-            </div>
-                
-                
+            </div>   
         </section>
     
 
@@ -171,8 +170,34 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team list">
+
+
                     <li class="team__item">
-                        <img src="./images/desinger.jpg" alt="Дезайнер продукта" width="270" class="team_image">
+                        <picture>
+                            <!-- Десктоп -->
+                            <source media="(min-width: 1200px)" 
+                                    srcset="./images/team/img_1_lg_1x.jpg 1x,
+                                            ./images/team/img_1_lg_2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!-- Планшет -->
+                            <source media="(min-width: 768px)" 
+                                    srcset="./images/team/img_1_md_1x.jpg 1x,
+                                            ./images/team/img_1_md_2x.jpg 2x" 
+                                    type="image/jpg">
+
+                            <!-- Для мобільного -->
+                            <source media="(max-width: 767px)"  
+                                    srcset="./images/team/img_1_sm_1x.jpg 1x, 
+                                            ./images/team/img_1_sm_2x.jpg 2x"
+                                        type="image/jpg">
+                                    
+                            
+                            <img  
+                                src="./images/team/img_1_sm_1x" alt="Дезайнер продукта"
+                                width="450" class="team_image" loading="lazy">
+                        </picture>
+                        
+
                         <div class="description">
                             <h3 class="description__title">Игорь Демьяненко</h3>
                             <p class="description__text" lang="en">Product Designer</p>
@@ -184,6 +209,8 @@
                                         </svg>
                                     </a>
                                 </li>
+
+
                                 <li class="social__team"><a href="http://twitter.com" class="social__link">
                                     <svg class="social__icon">
                                         <use href="./images/svg/sprite.svg#icon-twitter"></use>
@@ -208,7 +235,27 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/developer.jpg" alt="Разработчик" width="270" class="team_image">
+
+                        <picture>
+                            <!-- Десктоп -->
+                            <source media="(min-width: 1200px)" 
+                                    srcset="./images/team/img_2_lg_1x.jpg 1x,
+                                            ./images/team/img_2_lg_2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!-- Планшет -->
+                            <source media="(min-width: 768px)" 
+                                    srcset="./images/team/img_2_md_1x.jpg 1x,
+                                            ./images/team/img_2_md_2x.jpg 2x" 
+                                    type="image/jpg">
+                        
+                            <!-- Для мобільного -->
+                            <source media="(max-width: 767px)" 
+                                    srcset="./images/team/img_2_sm_1x.jpg 1x, 
+                                            ./images/team/img_2_sm_2x.jpg 2x" 
+                                    type="image/jpg">
+                        <img src="./images/team/img_2_sm_1x.jpg" alt="Разработчик" width="450" class="team_image">
+                        </picture>
+
                         <div class="description">
                             <h3 class="description__title">Ольга Репина</h3>
                             <p class="description__text" lang="en">Frontend Developer</p>
@@ -246,7 +293,27 @@
 
                     </li>
                     <li class="team__item">
-                        <img src="./images/marketing.jpg" alt="Маркетолог" width="270" class="team_image">
+
+                        <picture>
+                            <!-- Десктоп -->
+                            <source media="(min-width: 1200px)" 
+                                    srcset="./images/team/img_3_lg_1x.jpg 1x,
+                                            ./images/team/img_3_lg_2x.jpg 2x"
+                                    type="image/jpg">
+                            <!-- Планшет -->
+                            <source media="(min-width: 768px)" 
+                                    srcset="./images/team/img_3_md_1x.jpg 1x,
+                                            ./images/team/img_3_md_2x.jpg 2x"
+                                    type="image/jpg">
+                        
+                            <!-- Для мобільного -->
+                            <source media="(max-width: 767px)" 
+                                    srcset="./images/team/img_3_sm_1x.jpg 1x, 
+                                            ./images/team/img_3_sm_2x.jpg 2x"
+                                    type="image/jpg">
+
+                        <img src="./images/team/img__sm_1x.jpg" alt="Маркетолог" width="450" class="team_image">
+                        </picture>
                         <div class="description">
                             <h3 class="description__title">Николай Тарасов</h3>
                             <p class="description__text" lang="en">Marketing</p>
@@ -283,7 +350,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/ui.jpg" alt="Дезайнер интерфейса" width="270" class="team_image">
+
+                        <picture>
+                            <!-- Десктоп -->
+                            <source media="(min-width: 1200px)" 
+                                    srcset="./images/team/img_4_lg_1x.jpg 1x,
+                                            ./images/team/img_4_lg_2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!-- Планшет -->
+                            <source media="(min-width: 768px)" 
+                                    srcset="./images/team/img_4_md_1x.jpg 1x,
+                                            ./images/team/img_4_md_2x.jpg 2x" 
+                                    type="image/jpg">
+                        
+                            <!-- Для мобільного -->
+                            <source media="(max-width: 767px)" 
+                                    srcset="./images/team/img_4_sm_1x.jpg 1x, 
+                                            ./images/team/img_4_sm_2x.jpg 2x" 
+                                    type="image/jpg">
+                        <img src="./images/team/img_4_sm_1x.jpg" alt="Дезайнер интерфейса" width="450" class="team_image">
+                        </picture>
                         <div class="description">
                             <h3 class="description__title">Михаил Ермаков</h3>
                             <p class="description__text" lang="en">UI Designer</p>
