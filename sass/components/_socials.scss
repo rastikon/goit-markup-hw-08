@@ -2,87 +2,80 @@
     Соцмережі команди 
    ===============*/
 .social {
-    display: flex;
-    margin-top: 16px;
-    justify-content: center;
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
 }
 
-
 .social__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        border-radius: 50%;
-
-        &:hover .social__icon,
-        &:focus .social__icon {
-                fill: var(--spec-color);
-            }
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: var(--spec-color);
     }
+  }
 }
 
 .social__icon {
-    width: 20px;
-    height: 20px;
-    fill: var(--border);
+  width: 20px;
+  height: 20px;
+  fill: var(--border);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__team:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
-
 
 //====================================
 // Соцмережі у футері
 
 .social-footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    
-    
+  display: flex;
+  justify-content: center;
 
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-    }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .social-footer__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--color-social-network-bg);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-social-network-bg);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-footer__icon {
-    width: 20px;
-    height: 20px;
-    fill: var(--spec-color);
+  width: 20px;
+  height: 20px;
+  fill: var(--spec-color);
 }
 
 .social-footer__item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
